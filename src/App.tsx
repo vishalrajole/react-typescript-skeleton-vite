@@ -1,7 +1,10 @@
+import Button from "./lib/Button";
+
 function App() {
   return (
     <>
-      <div>Hello vite</div>
+      <div>Hello</div>
+      <Button variant="text" label="Primary Button" />
     </>
   );
 }
