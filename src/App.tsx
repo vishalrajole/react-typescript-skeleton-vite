@@ -1,4 +1,4 @@
-import Button from "./lib/Button";
+import Button from "./lib/Button/Button";
 
 function App() {
   return (

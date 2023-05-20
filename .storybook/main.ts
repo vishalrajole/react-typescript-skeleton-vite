@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/addon-styling",
+    "storybook-addon-designs",
   ],
   framework: {
     name: "@storybook/react-vite",
@@ -13,6 +14,9 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: "tag",
+  },
+  typescript: {
+    check: false,
   },
 };
 export default config;

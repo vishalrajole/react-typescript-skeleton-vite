@@ -1,4 +1,4 @@
-import { StyledButton } from "./index.styles";
+import { StyledButton } from "./button.styles";
 
 const Button = ({
   variant,
