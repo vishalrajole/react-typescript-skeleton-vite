@@ -7,7 +7,7 @@ const Button = ({
   variant: "text" | "contained" | "outlined";
   label: string;
 }) => {
-  return <StyledButton variant={variant}> {label}</StyledButton>;
+  return <StyledButton variant={variant}>{label}</StyledButton>;
 };
 
 export default Button;
