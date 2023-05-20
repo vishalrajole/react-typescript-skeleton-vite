@@ -1,13 +1,17 @@
+import { ButtonProps as MuiButtonProps } from "@mui/material";
+
 import { StyledButton } from "./button.styles";
 
-const Button = ({
-  variant,
-  label,
-}: {
-  variant: "text" | "contained" | "outlined";
+export interface ButtonProps extends MuiButtonProps {
   label: string;
-}) => {
-  return <StyledButton variant={variant}>{label}</StyledButton>;
+}
+
+const Button = ({ label, variant, ...rest }: ButtonProps) => {
+  return (
+    <StyledButton variant={variant} {...rest}>
+      {label}
+    </StyledButton>
+  );
 };
 
 export default Button;
